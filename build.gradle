@@ -32,6 +32,11 @@ android {
     packagingOptions {
         exclude 'LICENSE.txt'
     }
+
+    lintOptions {
+        // I prefer avoiding a build fail if there is any warning, for they are only warnings
+        abortOnError false
+    }
 }
 
 
